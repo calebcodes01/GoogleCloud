@@ -15,10 +15,11 @@ Use this to upload many files from your local computer to a bucket
 
 	 gsutil -m cp *fastq.gz gs://name-of-bucket/
 
-# Bucket to VM
+# Bucket to VM and back
 Use this to upload files from a bucket to the VM in your current working directory
 
 	 gsutil cp gs://name-of-bucket/path/*fastq.gz .
+  	 gsutil cp file gs://name-of-bucket
 #if using docker and get this error: 
 docker: Error response from daemon: driver failed programming external connectivity on endpoint interesting_buck (7bf9cfbad45928b6622b4403e8c68b697dcd304441ae34166776175ac086ddad): Bind for 0.0.0.0:8080 failed: port is already allocated.
 
